@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiauDote - Adotar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Miau<span>Dote</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="adotar.html" class="active">Adotar</a></li>
+                    <li><a href="cadastrargato.html">Cadastrar Gato</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </nav>
+            <div class="login-btn">
+                <a href="login.html" class="btn-outline">Entrar</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="adotar-page">
+        <div class="container">
+            <h1 class="page-title">19 Gatinhos Encontrados</h1>
+            
+            <div class="adotar-content">
+                <div class="filter-sidebar">
+                    <h2>Filtros</h2>
+                    
+                    <div class="filter-group">
+                        <h3>Idade</h3>
+                        <div class="filter-option">
+                            <input type="checkbox" id="filhote" name="idade" value="filhote">
+                            <label for="filhote">Filhote (0-6 meses)</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="jovem" name="idade" value="jovem">
+                            <label for="jovem">Jovem (6 meses-2 anos)</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="adulto" name="idade" value="adulto">
+                            <label for="adulto">Adulto (2-8 anos)</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="senior" name="idade" value="senior">
+                            <label for="senior">Sênior (8+ anos)</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Sexo</h3>
+                        <div class="filter-option">
+                            <input type="checkbox" id="macho" name="sexo" value="macho">
+                            <label for="macho">Macho</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="femea" name="sexo" value="femea">
+                            <label for="femea">Fêmea</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Cor</h3>
+                        <div class="filter-option">
+                            <input type="checkbox" id="laranja" name="cor" value="laranja">
+                            <label for="laranja">Laranja</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="preto" name="cor" value="preto">
+                            <label for="preto">Preto</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="branco" name="cor" value="branco">
+                            <label for="branco">Branco</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cinza" name="cor" value="cinza">
+                            <label for="cinza">Cinza</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="tricolor" name="cor" value="tricolor">
+                            <label for="tricolor">Tricolor</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="siames" name="cor" value="siames">
+                            <label for="siames">Siamês</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Saúde</h3>
+                        <div class="filter-option">
+                            <input type="checkbox" id="vacinado" name="saude" value="vacinado">
+                            <label for="vacinado">Vacinado</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="castrado" name="saude" value="castrado">
+                            <label for="castrado">Castrado</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="vermifugado" name="saude" value="vermifugado">
+                            <label for="vermifugado">Vermifugado</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="especial" name="saude" value="especial">
+                            <label for="especial">Necessidades Especiais</label>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-filter">Aplicar Filtros</button>
+                    <button class="btn-clear-filter">Limpar Filtros</button>
+                </div>
+                
+                <div class="cats-grid">
+                    <!-- Gato 1 -->
+                    <div class="cat-card" data-idade="filhote" data-sexo="macho" data-cor="laranja" data-saude="vacinado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (4).jpeg" alt="Fofão">
+                            <span class="cat-tag">Filhote</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Fofão</h3>
+                            <p class="cat-details">4 meses • Macho • Laranja</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Vermifugado</span>
+                            </div>
+                            <p class="cat-description">Muito brincalhão e carinhoso, adora brincar com bolinhas.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 2 -->
+                    <div class="cat-card" data-idade="jovem" data-sexo="femea" data-cor="branco" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (3).jpeg" alt="lavigne">
+                            <span class="cat-tag">Jovem</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Lavigne</h3>
+                            <p class="cat-details">1 ano • Fêmea • Branca</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinada</span>
+                                <span class="tag">Castrada</span>
+                                <span class="tag">Vermifugada</span>
+                            </div>
+                            <p class="cat-description">Calma e adora carinho, ronrona muito quando está feliz.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 3 -->
+                    <div class="cat-card" data-idade="filhote" data-sexo="femea" data-cor="tricolor" data-saude="vacinado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (5).jpeg" alt="Pixie">
+                            <span class="cat-tag">Filhote</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Pixie</h3>
+                            <p class="cat-details">5 meses • Fêmea • Tricolor</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinada</span>
+                                <span class="tag">Vermifugada</span>
+                            </div>
+                            <p class="cat-description">Muito ativa e curiosa, adora explorar novos ambientes.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 4 -->
+                    <div class="cat-card" data-idade="adulto" data-sexo="macho" data-cor="preto" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (6).jpeg" alt="Pantera">
+                            <span class="cat-tag">Adulto</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Pantera</h3>
+                            <p class="cat-details">3 anos • Macho • Preto</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Castrado</span>
+                                <span class="tag">Vermifugado</span>
+                            </div>
+                            <p class="cat-description">Tranquilo e independente, gosta de dormir em lugares altos.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 5 -->
+                    <div class="cat-card" data-idade="senior" data-sexo="femea" data-cor="cinza" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (7).jpeg" alt="Vovó">
+                            <span class="cat-tag">Sênior</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Vovó</h3>
+                            <p class="cat-details">10 anos • Fêmea • Cinza</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinada</span>
+                                <span class="tag">Castrada</span>
+                                <span class="tag">Vermifugada</span>
+                            </div>
+                            <p class="cat-description">Dócil e tranquila, adora ficar no colo e receber carinho.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 6 -->
+                    <div class="cat-card" data-idade="jovem" data-sexo="macho" data-cor="siames" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="Legends of Siamese Cats’ Features - 10 Facts About Siamese Cats.jpeg" alt="Simba">
+                            <span class="cat-tag">Jovem</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Simba</h3>
+                            <p class="cat-details">1.5 anos • Macho • Siamês</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Castrado</span>
+                                <span class="tag">Vermifugado</span>
+                            </div>
+                            <p class="cat-description">Muito vocal e brincalhão, adora interagir com humanos.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+               
+                    <!-- Gato 7 -->
+                    <div class="cat-card" data-idade="filhote" data-sexo="femea" data-cor="laranja" data-saude="vacinado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (12).jpeg" alt="Pipoca">
+                            <span class="cat-tag">Filhote</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Pipoca</h3>
+                            <p class="cat-details">3 meses • Fêmea • Laranja</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinada</span>
+                                <span class="tag">Vermifugada</span>
+                            </div>
+                            <p class="cat-description">Muito energética e brincalhona, adora correr pela casa.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 8 -->
+                    <div class="cat-card" data-idade="adulto" data-sexo="macho" data-cor="branco" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="gata branca com heterocromia.jpeg" alt="Neve">
+                            <span class="cat-tag">Adulto</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Neve</h3>
+                            <p class="cat-details">4 anos • Macho • Branco</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Castrado</span>
+                                <span class="tag">Vermifugado</span>
+                            </div>
+                            <p class="cat-description">Calmo e carinhoso, adora ficar no colo e receber carinho.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 9 -->
+                    <div class="cat-card" data-idade="jovem" data-sexo="femea" data-cor="preto" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (16).jpeg" alt="Luna">
+                            <span class="cat-tag">Jovem</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Luna</h3>
+                            <p class="cat-details">2 anos • Fêmea • Preta</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinada</span>
+                                <span class="tag">Castrada</span>
+                                <span class="tag">Vermifugada</span>
+                            </div>
+                            <p class="cat-description">Elegante e misteriosa, adora observar o mundo pela janela.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 10 -->
+                    <div class="cat-card" data-idade="filhote" data-sexo="macho" data-cor="cinza" data-saude="vacinado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (10).jpeg" alt="Fumaça">
+                            <span class="cat-tag">Filhote</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Fumaça</h3>
+                            <p class="cat-details">5 meses • Macho • Cinza</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Vermifugado</span>
+                            </div>
+                            <p class="cat-description">Curioso e aventureiro, adora explorar todos os cantos da casa.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 11 -->
+                    <div class="cat-card" data-idade="senior" data-sexo="macho" data-cor="laranja" data-saude="vacinado,castrado,vermifugado,especial">
+                        <div class="cat-image">
+                            <img src="Pisică drăguță.jpeg" alt="Vovô">
+                            <span class="cat-tag">Sênior</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Vovô</h3>
+                            <p class="cat-details">12 anos • Macho • Laranja</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Castrado</span>
+                                <span class="tag">Vermifugado</span>
+                                <span class="tag">Especial</span>
+                            </div>
+                            <p class="cat-description">Sábio e tranquilo, tem diabetes controlada e precisa de cuidados especiais.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 12 -->
+                    <div class="cat-card" data-idade="adulto" data-sexo="femea" data-cor="tricolor" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (13).jpeg" alt="Mimi">
+                            <span class="cat-tag">Adulto</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Mimi</h3>
+                            <p class="cat-details">5 anos • Fêmea • Tricolor</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinada</span>
+                                <span class="tag">Castrada</span>
+                                <span class="tag">Vermifugada</span>
+                            </div>
+                            <p class="cat-description">Dócil e maternal, adora cuidar de outros gatos e até de cachorros.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 13 -->
+                    <div class="cat-card" data-idade="jovem" data-sexo="macho" data-cor="siames" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (8).jpeg" alt="Bidu">
+                            <span class="cat-tag">Jovem</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Bidu</h3>
+                            <p class="cat-details">1.5 anos • Macho • Siamês</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Castrado</span>
+                                <span class="tag">Vermifugado</span>
+                            </div>
+                            <p class="cat-description">Inteligente e ativo, aprende truques facilmente e adora brincar.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 14 -->
+                    <div class="cat-card" data-idade="filhote" data-sexo="femea" data-cor="preto" data-saude="vacinado,vermifugado">
+                        <div class="cat-image">
+                            <img src="Cute Black Cat (not mine).jpeg" alt="Pretinha">
+                            <span class="cat-tag">Filhote</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Pretinha</h3>
+                            <p class="cat-details">4 meses • Fêmea • Preta</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinada</span>
+                                <span class="tag">Vermifugada</span>
+                            </div>
+                            <p class="cat-description">Doce e brincalhona, adora se esconder e surpreender seus humanos.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 15 -->
+                    <div class="cat-card" data-idade="adulto" data-sexo="macho" data-cor="laranja" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (15).jpeg" alt="Garfield">
+                            <span class="cat-tag">Adulto</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Garfield</h3>
+                            <p class="cat-details">6 anos • Macho • Laranja</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Castrado</span>
+                                <span class="tag">Vermifugado</span>
+                            </div>
+                            <p class="cat-description">Preguiçoso e comilão, adora tirar sonecas ao sol e comer petiscos.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 16 -->
+                    <div class="cat-card" data-idade="jovem" data-sexo="femea" data-cor="branco" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="download (14).jpeg" alt="Floco">
+                            <span class="cat-tag">Jovem</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Floco</h3>
+                            <p class="cat-details">2 anos • Fêmea • Branca</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinada</span>
+                                <span class="tag">Castrada</span>
+                                <span class="tag">Vermifugada</span>
+                            </div>
+                            <p class="cat-description">Elegante e delicada, adora manter-se limpa e brincar com bolinhas.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 17 -->
+                    <div class="cat-card" data-idade="filhote" data-sexo="macho" data-cor="tricolor" data-saude="vacinado,vermifugado">
+                        <div class="cat-image">
+                            <img src="Calico cat.jpeg" alt="Pintado">
+                            <span class="cat-tag">Filhote</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Pintado</h3>
+                            <p class="cat-details">3 meses • Macho • Tricolor</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Vermifugado</span>
+                            </div>
+                            <p class="cat-description">Colorido e alegre, adora brincar com outros gatos e com humanos.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 18 -->
+                    <div class="cat-card" data-idade="senior" data-sexo="femea" data-cor="cinza" data-saude="vacinado,castrado,vermifugado,especial">
+                        <div class="cat-image">
+                            <img src="download (9).jpeg" alt="Cinderela">
+                            <span class="cat-tag">Sênior</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Cinderela</h3>
+                            <p class="cat-details">9 anos • Fêmea • Cinza</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinada</span>
+                                <span class="tag">Castrada</span>
+                                <span class="tag">Vermifugada</span>
+                                <span class="tag">Especial</span>
+                            </div>
+                            <p class="cat-description">Doce e calma, tem apenas três patinhas mas isso não a impede de ser feliz.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Gato 19 -->
+                    <div class="cat-card" data-idade="adulto" data-sexo="macho" data-cor="siames" data-saude="vacinado,castrado,vermifugado">
+                        <div class="cat-image">
+                            <img src="gato Siames.jpeg" alt="Duque">
+                            <span class="cat-tag">Adulto</span>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Duque</h3>
+                            <p class="cat-details">4 anos • Macho • Siamês</p>
+                            <div class="cat-health">
+                                <span class="tag">Vacinado</span>
+                                <span class="tag">Castrado</span>
+                                <span class="tag">Vermifugado</span>
+                            </div>
+                            <p class="cat-description">Majestoso e vocal, adora ser o centro das atenções e receber carinho.</p>
+                            <button class="btn-adopt">Me adote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

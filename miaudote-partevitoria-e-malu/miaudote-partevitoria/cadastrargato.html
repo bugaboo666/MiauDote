@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiauDote - Notícias</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Miau<span>Dote</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="adotar.html">Adotar</a></li>
+                    <li><a href="cadastrargato.html" class="active">Cadastrar Gato</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                    <li><a href="noticias.html" >Notícias</a></li>
+                </ul>
+            </nav>
+            <div class="login-btn">
+                <a href="login.html" class="btn-outline">Entrar</a>
+            </div>
+        </div>
+    <div class="login-container-cadastro">
+        <div class="login-cadastro">
+            <div class="login-foto">
+                <img src="adicionarfoto.jpeg" alt="" style="border-radius: 15px;">
+                <p>Adicione a foto do pet aqui!</p>
+            </div>
+            <div class="login-cadastro-texto" style="margin-top: 20px;">
+                <p>OBS - Este formulário será entregue à nossa equipe, ou seja, o gato não será cadastrado automaticamente. Checaremos as informações e daremos retorno pelo seu email cadastrado e seu número de telefone , após isso, nos encarregaremos de buscar o gato em sua residência.</p>
+            </div>
+            <div class="login-form" style="padding-top: 20px;">
+                <h1 style="color:#FF5CA0;">Miau<span>Dote</span></h1>
+            </div>
+        </div>
+        <div class="login-right">
+            <div class="login-form">
+                
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="nome" id="nome" placeholder="nome do Pet">
+                </div>
+                
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="idade" id="idade" placeholder="idade do Pet">
+                </div>
+
+                <div class="form-group">
+                    <label for="dados medicos">Dados Médicos:</label>
+                    <input type="dados medicos" id="dados medicos" placeholder="Ex: cegueira, problemas respiratórios....">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone para Contato:</label>
+                    <input type="telefone" id="telefone" placeholder="(55) +13 99999-9999">
+                </div>
+                
+                
+                <button class="btn-cadastrar" onclick="realizarCadastro()">Cadastrar</button>
+
+                    <script>
+        function realizarCadastro() {
+            alert('O cadastro foi eviado ao nosso suporte, por favor, aguarde nosso retorno!');
+        }
+    </script>
+                
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
